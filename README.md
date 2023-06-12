@@ -36,12 +36,12 @@ A hybrid approach that utilizes both the server and the client sides to render c
 
 ## Demo
 - https://newsroom.dev.yliang.net
-![demo](/public/demo.png)
+![demo](/app/public/demo.png)
 
 
 ## Running Locally
 The application will be running on [localhost:4200](http://localhost:4200/)
 * Clone the repository: `git clone https://github.com/y-liang/starter-app-nextjs-contentful.git`
 * Install dependencies: `npm install`
-* Set environment variables [defined in `.env.local.example`](.env.local.example) in a _.env.local_ file
+* Set environment variables defined in [`.env.local.example`](.env.local.example) in a _.env.local_ file
 * Start the development server: `npm run dev`
