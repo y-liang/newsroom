@@ -16,9 +16,11 @@ A hybrid approach that utilizes both the server and the client sides to render c
 - Data fetching and caching
    - Cache data fetched from News API in development  
    - Switch to dynamic data fetch and opt out of caching behavior in production
+
 - Component rendering
    - Dynamically render the whole route at request time based on search params
    - Apply predefined classes from Tailwind for styling
+
 - State management
    - Initialize global state by reading from the local storage
    - Rerender output after hydration to set articles' statuses
@@ -41,8 +43,9 @@ A hybrid approach that utilizes both the server and the client sides to render c
 
 
 ## Running Locally
-The application will be running on [localhost:4200](http://localhost:4200/)
-* Clone the repository: `git clone https://github.com/y-liang/starter-app-nextjs-contentful.git`
+The application will be running on [localhost:4200](http://localhost:4200/). The port can be specified by modifying the `"dev": "next dev -p 4200"` and `"start": "next start -p 4200"` scripts in the _package.json_ file.
+
+* Clone the repository: `git clone https://github.com/y-liang/newsroom.git`
 * Install dependencies: `npm install`
-* Set environment variables defined in [`.env.local.example`](.env.local.example) in a _.env.local_ file
+* Set environment variables defined in _.env.local.example_ in a _.env.local_ file
 * Start the development server: `npm run dev`
