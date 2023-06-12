@@ -36,6 +36,7 @@ A hybrid approach that utilizes both the server and the client sides to render c
 
 ## Demo
 - https://newsroom.dev.yliang.net
+
 ![demo](/app/public/demo.png)
 
 
