@@ -13,12 +13,17 @@ export default function Card({ article }: { article: Article; }) {
    useEffect(() => {
       setIsStarred(checkStarredStatus(article));
       setIsVisited(checkVisitedStatus(article));
+   }, [article]);
+
+   useEffect(() => {
+      setIsStarred(checkStarredStatus(article));
+      setIsVisited(checkVisitedStatus(article));
    }, [starred, visited]);
 
    function toggleStarred(article: Article) {
-      if(isStarred) {
+      if (isStarred) {
          starred.forEach(elem => {
-            if(JSON.stringify(elem) == JSON.stringify(article)) {
+            if (JSON.stringify(elem) == JSON.stringify(article)) {
                starred.delete(elem);
             }
          })
@@ -39,7 +44,7 @@ export default function Card({ article }: { article: Article; }) {
    function checkStarredStatus(article: Article) {
       let status = false;
       starred.forEach(elem => {
-         if(JSON.stringify(elem) == JSON.stringify(article)) {
+         if (JSON.stringify(elem) == JSON.stringify(article)) {
             status = true;
          }
       })

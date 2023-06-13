@@ -17,14 +17,14 @@ async function getNews(query?: string): Promise<{ status: string; articles?: Art
 
     const { status, ...result } = await response.json();
 
-    if(status == 'error') {
+    if (status == 'error') {
       console.error(result.code + ': ' + result.message);
     }
 
     const { articles } = result;
 
     return { status, articles };
-  } catch(error) {
+  } catch (error) {
     console.error(error);
     return { status: 'error' };
   }
@@ -41,7 +41,7 @@ function reshapeArticles(articles: Article[]) {
 
 export default async function findNews(query?: string) {
   const { articles } = await getNews(query);
-  if(!articles) return [];
+  if (!articles) return [];
   return reshapeArticles(articles);
 }
 

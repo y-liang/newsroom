@@ -12,7 +12,7 @@ export default function Search() {
       const formData = new FormData(event.currentTarget);
       const { keyword } = Object.fromEntries(formData.entries());
 
-      if(keyword == '') {
+      if (keyword == '') {
          router.push(`/`);
       } else {
          router.push(`/?q=${keyword}`);

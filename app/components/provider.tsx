@@ -23,16 +23,16 @@ export default function BookmarkProvider({ children }: { children: ReactNode; })
    }, []);
 
    useEffect(() => {
-      if(didMount) {
+      if (didMount) {
          const starredStr = localStorage.getItem('starred');
-         if(starredStr) {
+         if (starredStr) {
             const starredObjArr = JSON.parse(starredStr);
             const starredSet = new Set([...starredObjArr]);
             setStarred(starredSet);
          }
 
          const visitedStr = localStorage.getItem('visited');
-         if(visitedStr) {
+         if (visitedStr) {
             const visitedSet = new Set<string>([...JSON.parse(visitedStr)]);
             setVisited(visitedSet);
          }
