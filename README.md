@@ -14,11 +14,11 @@ A hybrid approach that utilizes both the server and the client sides to render c
 
 ## Features
 - Data fetching and caching
-   - Cache data fetched from News API in development  
-   - Switch to dynamic data fetch and opt out of caching behavior in production
+   - Cache data fetched from News API (static data fetching) in development  
+   - Switch to dynamic data fetching and opt out of caching behavior in production
 
 - Component rendering
-   - Dynamically render the whole route at request time based on search params
+   - Render the whole route at request time based on search params
    - Apply predefined classes from Tailwind for styling
 
 - State management
@@ -27,14 +27,14 @@ A hybrid approach that utilizes both the server and the client sides to render c
 
 ## Future improvements
 - Current plan
-   - Show a loading state while streaming in the fetched data on the page, ideally for only the segment of the page, not the entire page
-   - Display a fallback component before reading local storage data and triggering a re-render
+   - Show a loading state while fetching data on the page, ideally for only the segment of the page, not the entire page
+   - Display a placeholder component before reading local storage data and triggering a re-render
    - Introduce a reducer to combine with context for a more declarative state logic
 
 - Additional features
    - Add a category menu for collections of articles, such as business, sciences, technology, and etc
    - Add pagination or bottomless scrolling for more content
-   - It doesn't appear that NewsAPI supports webhooks. It would be a nice-to-have feature to listen for events (such as when articles are added) and inform the user via a toast notification
+   - Add ARIA roles and properties to make pages more accessible
 
 ## Demo
 - https://newsroom.dev.yliang.net

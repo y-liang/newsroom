@@ -56,7 +56,7 @@ export default function Card({ article }: { article: Article; }) {
    }
 
    return (
-      <article className='flex flex-col md:w-full h-full py-4 md:p-8 bg-white md:shadow md:hover:bg-white/80 md:focus-within:ring-1 ring-slate-300 md:hover:ring-1 transition-all relative rounded-2xl'>
+      <article className='flex flex-col md:w-full h-full p-4 md:p-8 bg-white md:shadow md:hover:bg-white/80 md:focus-within:ring-1 ring-slate-300 md:hover:ring-1 transition-all relative rounded-2xl'>
          {article.urlToImage ?
             <img src={article.urlToImage} className='max-w-full md:max-w-none h-64 object-cover md:-mx-6 md:-mt-6 mb-8 rounded-xl' alt='' /> :
             <div className='max-w-full md:max-w-none h-64 md:-mx-6 md:-mt-6 mb-8 text-slate-400 text-sm flex flex-col items-center justify-center'>
