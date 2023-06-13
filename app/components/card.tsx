@@ -13,12 +13,7 @@ export default function Card({ article }: { article: Article; }) {
    useEffect(() => {
       setIsStarred(checkStarredStatus(article));
       setIsVisited(checkVisitedStatus(article));
-   }, [article]);
-
-   useEffect(() => {
-      setIsStarred(checkStarredStatus(article));
-      setIsVisited(checkVisitedStatus(article));
-   }, [starred, visited]);
+   }, [starred, visited, article]);
 
    function toggleStarred(article: Article) {
       if (isStarred) {
