@@ -5,7 +5,7 @@ import Card from '@/app/components/card';
 export default function Gallery({ articles }: { articles: Article[]; }) {
    return (
       <main className='bg-slate-50'>
-         <section className='mx-auto py-12 px-6 md:px-8 space-y-6 max-w-7xl'>
+         <section className='mx-auto py-8 sm:py-12 px-2 sm:px-6 md:px-8 space-y-6 max-w-7xl'>
             {articles.length ? <>
                <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 items-start'>
                   {articles.slice(0, 2).map((elem, index) => <Card article={elem} key={index} />)}

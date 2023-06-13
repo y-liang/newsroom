@@ -20,7 +20,7 @@ export default function Search() {
    }
 
    return (
-      <form method='post' onSubmit={handleSubmit} aria-label='Search bar' className='relative w-full max-w-sm px-8 md:mx-auto'>
+      <form method='post' onSubmit={handleSubmit} aria-label='Search bar' className='relative w-full max-w-sm px-2 sm:px-8 md:mx-auto'>
          <input
             type='search'
             name='keyword'
@@ -28,7 +28,7 @@ export default function Search() {
             placeholder='Find a story...'
             aria-label='Find a story'
             autoComplete='off' />
-         <MagnifyingGlassIcon className='h-4 w-4 absolute top-2.5 left-10 text-slate-300' />
+         <MagnifyingGlassIcon className='h-4 w-4 absolute top-2.5 left-4 sm:left-10 text-slate-300' />
       </form>
    );
 }

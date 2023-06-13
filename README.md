@@ -27,14 +27,15 @@ A hybrid approach that utilizes both the server and the client sides to render c
 
 ## Future improvements
 - Current plan
-   - Show a loading state while fetching data on the page, ideally for only the segment of the page, not the entire page
-   - Display a placeholder component before reading local storage data and triggering a re-render
-   - Introduce a reducer to combine with context for a more declarative state logic
+   - Implement a loading state to display while fetching data, ideally only for the affected segment of the page rather than the entire page
+   - Display a placeholder component while reading data from local storage and before triggering a re-render
+   - Introduce a reducer to work with context for more declarative state logic
 
 - Additional features
-   - Add a category menu for collections of articles, such as business, sciences, technology, and etc
-   - Add pagination or bottomless scrolling for more content
-   - Add ARIA roles and properties to make pages more accessible
+   - Implement a category menu to allow users to browse collections of articles by topic, such as business, sciences, technology, and more
+   - Add pagination or infinite scrolling to dynamically load more content as the user browses
+   - Improve accessibility by adding ARIA roles and properties to page elements
+   - Consider replacing the modal-based bookmark view with a sidebar
 
 ## Demo
 - https://newsroom.dev.yliang.net

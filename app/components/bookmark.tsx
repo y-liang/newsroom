@@ -15,8 +15,9 @@ export default function Bookmark() {
             disabled={starred.size == 0}
             onClick={() => setOpen(!open)}
             className='flex items-center gap-2 text-sm text-slate-600 md:enabled:hover:text-slate-800 transition-colors font-normal'>
-            <StarIcon className='h-4 w-4 opacity-50 mb-0.5 mr-2 md:mr-0' />
-            <span className='hidden md:flex'>{`${starred.size} ${starred.size == 1 ? 'Bookmark' : 'Bookmarks'}`}</span>
+            <StarIcon className='h-4 w-4 opacity-50 mb-0.5 sm:mr-2 md:mr-0' />
+            <span>{starred.size}</span>
+            <span className='hidden md:flex'>{`${starred.size == 1 ? 'Bookmark' : 'Bookmarks'}`}</span>
          </button>
          <Modal open={open} setOpen={setOpen} />
       </aside>
