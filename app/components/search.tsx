@@ -1,10 +1,12 @@
 'use client';
 import { MagnifyingGlassIcon } from '@heroicons/react/20/solid';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { FormEvent } from 'react';
 
 export default function Search() {
    const router = useRouter();
+   const searchParams = useSearchParams();
+   const query = searchParams.get('q');
 
    function handleSubmit(event: FormEvent<HTMLFormElement>) {
       event.preventDefault();
@@ -27,6 +29,7 @@ export default function Search() {
             className='flex w-full items-center text-sm leading-6 text-slate-600 placeholder:text-slate-400 font-normal bg-white/75 rounded-full ring-1 ring-slate-200 focus:ring-slate-400 shadow py-1.5 pl-8 pr-3 md:hover:ring-slate-400 transition-all focus-visible:outline-0'
             placeholder='Find a story...'
             aria-label='Find a story'
+            defaultValue={query || ''}
             autoComplete='off' />
          <MagnifyingGlassIcon className='h-4 w-4 absolute top-2.5 left-4 sm:left-10 text-slate-300' />
       </form>
