@@ -1,5 +1,5 @@
 # News Browser
-A web application that leverages the [News API](https://newsapi.org/) to provide users with the latest news articles, built with Next.js and styled with Tailwind.
+A web application that leverages the [News API](https://newsapi.org/) to provide users with the latest news articles, built with Next.js for fast loading pages and styled with Tailwind for an intuitive, responsive design.
 
 ## Patterns
 A hybrid approach that utilizes both the server and the client sides to render components.
@@ -32,16 +32,23 @@ A hybrid approach that utilizes both the server and the client sides to render c
    - Introduce a reducer to work with context for more declarative state logic
 
 - Additional features
-   - Implement a category menu to allow users to browse collections of articles by topic, such as business, sciences, technology, and more
+   - Implement a category menu to allow users to browse collections of articles by topic
    - Add pagination or infinite scrolling to dynamically load more content as the user browses
    - Improve accessibility by adding ARIA roles and properties to page elements
    - Consider replacing the modal-based bookmark view with a sidebar
+   - Consider a multi-column design, a list-detail layout to quickly browser through content
 
 ## Demo
 - https://newsroom.dev.yliang.net
 
+Home page
 ![demo](/app/public/demo.png)
 
+Bookmark modal
+![bookmark](/app/public/bookmark.png)
+
+Page speed
+![speed](/app/public/speed.png)
 
 ## Running Locally
 The application will be running on [localhost:4200](http://localhost:4200/). The port can be specified by modifying the `"dev": "next dev -p 4200"` in the _package.json_ file.

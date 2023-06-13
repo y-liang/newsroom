@@ -61,7 +61,7 @@ export default function Card({ article }: { article: Article; }) {
          <button
             type='button'
             onClick={() => { toggleStarred(article); }}
-            className={`${isStarred ? 'text-yellow-400 bg-yellow-400/20' : 'text-white bg-slate-400/30'} opacity-75 backdrop-blur-sm md:hover:opacity-100 rounded-full p-1 absolute right-4 top-8 md:top-4 z-20`}>
+            className={`${isStarred ? 'text-yellow-400 bg-yellow-400/20' : 'text-white bg-slate-400/30'} opacity-75 backdrop-blur-sm md:hover:opacity-100 rounded-full p-1 absolute right-4 top-4 z-20`}>
             {isStarred ?
                <StarIcon className='h-6 w-6' /> :
                <StarOutlineIcon className='h-6 w-6' />}

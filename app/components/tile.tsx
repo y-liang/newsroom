@@ -59,7 +59,7 @@ export default function Tile({ article }: { article: Article; }) {
          <button
             type='button'
             onClick={() => { removeFromStarred(article); }}
-            className='font-medium text-slate-400 p-2 md:hover:text-slate-800 transition-colors'
+            className='font-medium text-slate-400 m-1 p-1 md:hover:text-slate-800 transition-colors md:hover:bg-slate-50 rounded-full'
          >
             <XMarkIcon className='h-4 w-4' aria-hidden='true' />
          </button>
