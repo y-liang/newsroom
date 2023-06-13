@@ -43,7 +43,7 @@ A hybrid approach that utilizes both the server and the client sides to render c
 
 
 ## Running Locally
-The application will be running on [localhost:4200](http://localhost:4200/). The port can be specified by modifying the `"dev": "next dev -p 4200"` and `"start": "next start -p 4200"` scripts in the _package.json_ file.
+The application will be running on [localhost:4200](http://localhost:4200/). The port can be specified by modifying the `"dev": "next dev -p 4200"` scripts in the _package.json_ file.
 
 * Clone the repository: `git clone https://github.com/y-liang/newsroom.git`
 * Install dependencies: `npm install`
