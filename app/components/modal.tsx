@@ -52,7 +52,7 @@ export default function Modal({ open, setOpen }: { open: any, setOpen: any; }) {
                               {starred.size != 0 &&
                                  <button
                                     type='button'
-                                    onClick={() => setStarred(new Set())}
+                                    onClick={() => { setStarred(new Set()); localStorage.removeItem('starred') }}
                                     className='text-sm text-slate-400 md:hover:text-slate-600 transition-colors rounded-full p-2'>
                                     Clear
                                  </button>}
@@ -74,6 +74,6 @@ export default function Modal({ open, setOpen }: { open: any, setOpen: any; }) {
                </div>
             </div>
          </Dialog>
-      </Transition.Root>
+      </Transition.Root >
    );
 }
