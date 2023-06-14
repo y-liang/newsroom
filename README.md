@@ -25,7 +25,7 @@ A hybrid approach that utilizes both the server and the client sides to render c
    - Initialize global state by reading from the local storage
    - Rerender output after hydration to set articles' statuses
 
-## Future improvements
+## What's next
 - Current plan
    - Implement a loading state to display while fetching data, ideally only for the affected segment of the page rather than the entire page
    - Display a placeholder component while reading data from local storage and before triggering a re-render
